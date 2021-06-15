@@ -1,0 +1,40 @@
+<background>
+  <starttime>
+    <year>2011</year>
+    <month>11</month>
+    <day>24</day>
+    <hour>5</hour>
+    <minute>30</minute>
+    <second>00</second>
+  </starttime>
+
+  <!-- MacOS Big Sur wallpapers changing in the morning and evening -->
+  <!-- This animation will start at 6:00 -->
+
+  <!-- We start with sunrise at 6 AM. It will remain up for 10 hour. -->
+  <static>
+  <duration>36000.0</duration>
+  <file>/usr/share/backgrounds/gnome/Monterey/light.jpg</file>
+  </static>
+  
+  <!-- Sunrise starts to transition to evening at 4 PM. The transition lasts for 2 hours, ending at 6 PM. -->
+  <transition type="overlay">
+  <duration>7200.0</duration>
+  <from>/usr/share/backgrounds/gnome/Monterey/light.jpg</from>
+  <to>/usr/share/backgrounds/gnome/Monterey/dark.jpg</to>
+  </transition>
+  
+  <!-- We continue the evening wallpaper at 6 PM. It will remain up for 10 hour. -->
+  <static>
+  <duration>36000.0</duration>
+  <file>/usr/share/backgrounds/gnome/Monterey/dark.jpg</file>
+  </static>
+  
+  <!-- Sunrise starts to transition to day at 4 AM. The transition lasts for 2 hours, ending at 6 AM. -->
+  <transition type="overlay">
+  <duration>7200.0</duration>
+  <from>/usr/share/backgrounds/gnome/Monterey/dark.jpg</from>
+  <to>/usr/share/backgrounds/gnome/Monterey/light.jpg</to>
+  </transition>
+</background>
+
