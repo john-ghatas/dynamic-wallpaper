@@ -10,7 +10,9 @@ Enter the following command in the terminal, this script uses sudo **please revi
 ./copy_bigsur.sh
 ``` 
 
-After copying the files go gnome tweaks and point your background and/or lockscreen background to `/usr/share/backgrounds/gnome/BigSur/bigsur.xml` in Gnome Tweaks
+Each set of wallpapers is seperated in their own folder, with a script supplied for each set.
+
+After copying the files open gnome tweaks and point your background and/or lockscreen background to `/usr/share/backgrounds/gnome/BigSur/bigsur.xml` in Gnome Tweaks.
 
 ## Important 
-Edit the paths in the XML to point to the correct location of the wallpapers 
+Edit the paths in the XML to point to the correct location of the wallpapers when using different paths than used in the XML file
